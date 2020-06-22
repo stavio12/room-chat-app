@@ -18,9 +18,7 @@ const bot = {
 
 db.collection("users").doc(bot.uid).set(bot, { merge: true });
 
-module.exports = functions.firestore
-.document("channels/general/messages/{messageId}")
-.onCreate((doc, context) => {
+module.exports = functions.firestore.document("channels/general/messages/{messageId}").onCreate((doc, context) => {
   const message = doc.data();
   if (!message.text.startsWith("@gazbot")) {
     return;

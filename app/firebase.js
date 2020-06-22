@@ -4,13 +4,13 @@ import "firebase/database";
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbjarSPbCD5gF3MEiD64KeRqBayUkR9ns",
-  authDomain: "chat-app-ff51b.firebaseapp.com",
-  databaseURL: "https://chat-app-ff51b.firebaseio.com",
-  projectId: "chat-app-ff51b",
-  storageBucket: "chat-app-ff51b.appspot.com",
-  messagingSenderId: "979935949252",
-  appId: "1:979935949252:web:fa3dcd5498352b971cb491",
+  apiKey: "Your apiKey",
+  authDomain: "authDomain",
+  databaseURL: "DbURL",
+  projectId: "ProjectID",
+  storageBucket: "StorageBucket",
+  messagingSenderId: "MsgID",
+  appId: "AppID",
 };
 // Initialize Firebase
 

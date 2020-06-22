@@ -1,7 +1,6 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 
-
 const db = admin.firestore();
 
 exports.userStatusChanged = functions.database.ref("status/{userId}").onUpdate((change, context) => {
@@ -19,8 +18,4 @@ exports.userStatusChanged = functions.database.ref("status/{userId}").onUpdate((
   userDoc.update({
     status: eventStatus,
   });
-});
-
-exports.helloWorld = functions.https.onRequest((request, response) => {
-  response.send("Hello from Firebase!");
 });
